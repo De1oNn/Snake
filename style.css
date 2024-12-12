@@ -27,16 +27,21 @@ body {
     position: absolute;
     height: 50px;
     width: 50px;
-    background-color: black;
 }
 .food {
     position: absolute;
     height: 50px;
     width: 50px;
-    background-color: red;
     top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #head {
-    height: 50px;
-    width: 50px;
+    height: 100%;
+    width: 100%;
+}
+#apple {
+    height: 100%;
+    width: 100%;
 }
