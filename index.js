@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     const boardSize = 20; // 20x20 grid
     let snake = [{ x: 10, y: 10 }]; // Snake starting position (head at (9, 9))
     let food = { x: 5, y: 5 }; // Starting food position
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Get the game board element
     const gameBoard = document.getElementById('game-board');
-  
+
     // Create the grid
     for (let i = 0; i < boardSize * boardSize; i++) {
       const cell = document.createElement('div');
@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Remove the last segment of the snake (tail)
         snake.pop();
       }
-  
       updateBoard();
     }
   
@@ -87,10 +86,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     // Handle keyboard input to change snake direction
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', (d) => {
       if (isGameOver) return;
   
-      switch (e.key) {
+      switch (d.key) {
         case 'ArrowUp':
           if (direction.y !== 1) direction = { x: 0, y: -1 };
           break;
@@ -124,3 +123,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start the game when the page loads
     startGame();
   });
+  */
