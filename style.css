@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;
 }
@@ -16,19 +17,20 @@ body {
     justify-content: center;
     align-items: center;
 }
-.middle {
+#gameContainer {
     position: absolute;
     height: 1000px;
     width: 1000px;
     background-color: white;
     position: relative;
+
 }
 .inside {
     position: absolute;
     height: 50px;
     width: 50px;
 }
-.food {
+#food {
     position: absolute;
     height: 50px;
     width: 50px;
@@ -37,11 +39,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-#head {
-    height: 100%;
-    width: 100%;
-}
 #apple {
     height: 100%;
     width: 100%;
 }
+#score {
+    font-size: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#resetBtn {
+    font-size: 28px;
+    border-radius: 15px;
+}
+
