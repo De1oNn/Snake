@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     const boardSize = 20; // 20x20 grid
     let snake = [{ x: 9, y: 9 }]; // Snake starting position (head at (9, 9))
     let food = { x: 5, y: 5 }; // Starting food position
@@ -129,3 +129,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start the game when the page loads
     startGame();
   });
+  */

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script src="index.js" ></script>
+    <script src="snake.js" defer></script>
 </head>
 <body>
     <div id="game-board"></div>
-    <script src="index.js"></script>
+    <div id="scoreboard">
+      <p>Score: <span id="score">0</span></p>
+    </div>
+    <button id="reset-button">Reset Game</button>
 </body> 
-
 </html>
