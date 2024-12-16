@@ -29,7 +29,33 @@ function updateBoard() {
     cells[foodIndex].classList.add('food')
 }
 
+function updateScore() {
+    scoreBoard.textContent = score;
+}
 
+function maveSnake() {
+    const newHead = { x: snake[0].x + direction.x, y: snake[0].y + direction.y };
+if (
+    newHead.x < 0 || newHead.x >= boardsize || 
+    newHead.y < 0 || newHead.y >= boardsize ||
+    snake.some(segment => segment.x === newHead.x && segment.y === newHead.y)
+) {
+    isGameOver();
+    return;
+}
+        snake.unshift(newHead); // Add new head at the front
+
+    // Check if snake eats the food
+    if (newHead.x === food.x && newHead.y === food.y) {
+      score++;
+      updateScore(); // Update score when food is eaten
+      generateFood(); // Generate a new food item
+    } else {
+      snake.pop(); // Remove the tail (snake hasn't grown)
+    }
+
+    updateBoard();
+}
 
 
 
