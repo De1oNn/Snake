@@ -15,26 +15,19 @@ for (let i = 0; i < boardsize * boardsize; i++) {
     cell.classList.add('cell')
     gameBoard.appendChild(cell)
 }
-const cells = document.querySelectorAll('.cell');
+
+const cells = document.querySelectorAll('.cells');
 
 function updateBoard() {
     cells.forEach(cell => cell.classList.remove('snake', 'food'));
-    const foodIndex = food.y * boardsize + food.x; 
-    cells[foodIndex].classList.add('food');
+    
+    snake.forEach(segment => {
+        const index = segment.y * boardsize + segment.x;
+        cells[index].classList.add('snake');
+    });
+    const foodIndex = segment.y * boardsize + segment + food.x;
+    cells[foodIndex].classList.add('food')
 }
-function generateFood() {
-    food = {
-        x: Math.floor(Math.random() * boardsize),
-        y: Math.floor(Math.random() * boardsize)
-    };
-}
-
-
-
-
-
-
-
 
 
 
