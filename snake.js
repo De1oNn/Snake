@@ -1,4 +1,4 @@
-let boardsize = 20
+/*let boardsize = 20
 let food = [{ x : 9, x: 9}];
 let snake = { x: 5, y: 5 };
 let direction = { x: 1, y: 0 };
@@ -56,6 +56,7 @@ if (
 
     updateBoard();
 }
+    */
 
 
 
