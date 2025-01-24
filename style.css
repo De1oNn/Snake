@@ -1,6 +1,11 @@
-
+html {
+  height: screen;
+  width: screen;
+}
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  height: screen;
+  width: screen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +20,7 @@ body {
   width: 420px;
   height: 420px;
   background-color: black;
+  border: 6px black solid;
 }
 
 .cell {
@@ -34,6 +40,7 @@ body {
 #scoreboard {
   text-align: center;
   margin-top: 10px;
+  color: black;
 }
 
 #reset-button {
@@ -45,5 +52,23 @@ body {
   border-radius: 25px;
 }
 p {
-  color: white;
+  color: black;
+  font-size: 40px;
+  height: 70px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 10px;
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.whole {
+  height: screen;
+  width: screen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
