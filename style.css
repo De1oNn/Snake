@@ -20,6 +20,8 @@ body {
     margin: 0; /* Ensure no margin on body */
     padding: 0; /* Ensure no padding on body */
     overflow: hidden; /* Prevent scrolling */
+    border: 16px solid green;
+    box-sizing: border-box  ;
 }
 
 #game-board {
