@@ -1,17 +1,29 @@
 html {
-  height: screen;
-  width: screen;
+    height: screen;
+    width: screen;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrolling */
 }
+
 body {
-background-color: #f5f5f5; /* Light gray for a soft background */
+    background-color: #f5f5f5; /* Light gray for a soft background */
+    background-image: url('https://wallpapers.com/images/hd/snake-game-1366-x-768-background-s64wnv8q5taunoz6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0; /* Ensure no margin on body */
+    padding: 0; /* Ensure no padding on body */
+    overflow: hidden; /* Prevent scrolling */
 }
+
 #game-board {
-display: grid;
+    display: grid;
     grid-template-columns: repeat(20, 20px);
     grid-template-rows: repeat(20, 20px);
     gap: 1px;
@@ -23,23 +35,23 @@ display: grid;
 }
 
 .cell {
-width: 20px;
+    width: 20px;
     height: 20px;
     background-color: #ecf0f1;
 }
 
 .snake {
-background-color: #27ae60; /* Vibrant green */
+    background-color: #27ae60; /* Vibrant green */
     border-radius: 3px;
 }
 
 .food {
-background-color: #e74c3c; /* Bright red */
+    background-color: #e74c3c; /* Bright red */
     border-radius: 50%;
 }
 
 #scoreboard {
-margin: 15px 0;
+    margin: 15px 0;
     padding: 10px 20px;
     background-color: #3498db; /* Blue background */
     border-radius: 20px;
@@ -47,7 +59,7 @@ margin: 15px 0;
 }
 
 #reset-button {
-padding: 10px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     background-color: #e67e22; /* Orange for contrast */
     color: white;
@@ -56,9 +68,11 @@ padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 #reset-button:hover {
     background-color: #d35400; /* Darker orange on hover */
 }
+
 @media (max-width: 450px) {
     #game-board {
         width: 300px;
@@ -81,19 +95,21 @@ padding: 10px 20px;
         font-size: 14px;
     }
 }
+
 p {
-font-size: 28px;
+    font-size: 28px;
     font-family: Arial, sans-serif;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .whole {
-  height: screen;
-  width: screen;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    height: screen;
+    width: screen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
